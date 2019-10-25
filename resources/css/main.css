@@ -1,0 +1,178 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.hero {
+    background-image: url('../images/intro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* components */
+
+
+/* Sidebar */
+.sidebar {
+    @apply bg-oxford text-heather w-0 h-full z-10 top-0 pt-60 overflow-x-hidden font-bold text-sm flex flex-col fixed;
+}
+
+.sidebar.left-side {
+    @apply left-0;
+}
+
+.sidebar.right-side {
+    @apply right-0;
+}
+
+.sidebar a {
+    @apply p-10 pl-30 block;
+
+}
+
+.sidebar a:hover {
+    @apply text-spindle;
+}
+
+/* item card */
+
+.item-card {
+    @apply bg-white;
+    @apply flex flex-col justify-between;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.item-card .card-header {
+    @apply h-40 flex justify-center items-center text-center cursor-pointer;
+
+}
+
+.item-card .card-image {
+    @apply pl-10 pr-10 flex justify-center items-center;
+}
+
+.item-card .card-body {
+    @apply p-10 text-left flex flex-col;
+}
+.item-card .card-body .item-name {
+    @apply text-oxford text-base;
+
+}
+.item-card .card-body .item-name:hover {
+    @apply text-black;
+
+}
+
+.item-card .card-body .item-brand {
+    @apply  text-gray;
+}
+
+.item-card .item-price {
+    @apply p-10 text-lg text-black font-bold flex flex-col justify-end;
+
+}
+
+.item-card .card-footer {
+    @apply h-50 flex justify-center items-center text-center font-bold text-heather bg-oxford cursor-pointer;
+
+}
+
+.item-card .card-footer:hover {
+    @apply bg-mirage;
+    transition: background-color 0.2s ease-in;
+}
+
+
+/* custom-button */
+.custom-button {
+    @apply w-200 h-50 flex text-heather font-bold cursor-pointer;
+}
+
+.custom-button .button-title {
+    @apply w-3/4 bg-oxford flex justify-center items-center text-center;
+
+}
+
+.custom-button:hover .button-title {
+    @apply bg-mirage;
+    transition: background-color 0.2s ease-in;
+}
+
+.custom-button .button-icon {
+    @apply w-1/4 bg-mirage flex justify-center items-center text-center;
+}
+
+/* PayPal Custom button */
+
+.paypal-custom-button {
+    @apply w-200 h-50 flex text-dark_blue font-bold cursor-pointer;
+}
+
+.paypal-custom-button .button-title {
+    @apply w-3/4 bg-yellow flex justify-center items-center text-center;
+
+}
+
+.paypal-custom-button:hover .button-title {
+    @apply bg-dark_yellow;
+    transition: background-color 0.2s ease-in;
+}
+
+.paypal-custom-button .button-icon {
+    @apply w-1/4 bg-dark_yellow flex justify-center items-center text-center;
+}
+
+/* footer */
+
+.footer {
+    @apply mt-50 flex flex-col;
+}
+
+.footer .links {
+    @apply bg-oxford h-400;
+}
+
+.footer .copyrights {
+    @apply bg-mirage h-50 flex items-center justify-center text-sm text-heather;
+}
+.copytights a {
+    @apply text-spindle;
+}
+
+
+/* Register - Login components */
+
+.form-group {
+    @apply flex justify-center items-center flex-col m-20
+}
+
+.form-group .form-control {
+    @apply w-full m-5
+}
+
+.form-group .form-control label {
+    @apply text-sm text-oxford;
+}
+
+.form-group .form-control input {
+    @apply bg-catskill_white w-full h-35 rounded-lg p-10 text-sm;
+}
+.form-group .form-control input[type=file] {
+    @apply h-45;
+}
+
+.form-group .form-control input::placeholder {
+    @apply text-gray;
+}
+
+.pagination {
+    @apply flex;
+}
+.pagination li {
+    @apply text-heather m-5 p-5 pl-10 pr-10 bg-oxford rounded
+}
+
+
